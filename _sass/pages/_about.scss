@@ -1,0 +1,27 @@
+.about{
+	&.bleed{
+		&::before{
+			content: 'cre-';
+		}
+		&::after{
+			content: 'ative';
+		}
+	}
+}
+
+
+
+.team{
+	&.bleed{
+		&::before{
+			content: 'our-';
+		}
+		&::after{
+			content: 'team';
+		}
+	}
+	margin-bottom: $section-margin;
+	#branding, #uiux, #dev{
+		margin-bottom: $section-margin;
+	}
+}

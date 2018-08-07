@@ -1,0 +1,27 @@
+.bleed{
+	&::before{
+		content: '';
+		color: transparent;
+		font-family: 'radio_groteskbold', san-serif;
+		font-size: $custom-font-size;		
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin-top: -64px;
+		margin-left: -80px;
+		-webkit-text-stroke: .5px $text-muted;
+		z-index: -1;
+	}
+	&::after{
+		content: '';
+		color: transparent;
+		font-family: 'radio_groteskbold', san-serif;
+		font-size: $custom-font-size;	
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-right: -160px;
+		-webkit-text-stroke: .5px $text-muted;
+		z-index: -1;
+	}
+}

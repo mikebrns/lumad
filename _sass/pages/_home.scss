@@ -1,0 +1,89 @@
+.hero{
+	padding-bottom: 80px;
+}
+.work{
+	&.bleed{
+		&::before{
+			content: 'fea-';
+		}
+		&::after{
+			content: 'tured';
+		}
+	}
+}
+
+.process{
+	&.bleed{
+		&::before{
+			content: 'wo-';
+		}
+		&::after{
+			content: 'rk';
+		}
+	}
+}
+.testimonials{
+	&.bleed{
+		&::before{
+			content: 'cli-';
+		}
+		&::after{
+			content: 'ent';
+		}
+	}
+	.flickity-viewport{
+		overflow: visible !important;
+	}
+	.carousel{
+		blockquote{
+		padding-right: 160px;
+			img{
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: -1;
+				margin-top:-160px;
+				margin-right: 80px;
+			}
+		}		
+	}
+}
+.services{
+	&.bleed{
+		&::before{
+			content: 'sc-';
+		}
+		&::after{
+			content: 'ope';
+		}
+	}
+}
+.contact{
+	&.bleed{
+		&::before{
+			content: 'say-';
+		}
+		&::after{
+			content: 'hello';
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

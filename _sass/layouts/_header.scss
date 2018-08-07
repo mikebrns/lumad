@@ -1,0 +1,21 @@
+header{
+	&.site-header{
+		.navbar{
+			padding: 40px;
+			.navbar-brand{
+				font-family: 'radio_groteskbold', san-serif;
+				font-size: 1.5rem;
+				letter-spacing: 1px;
+				padding: 0;
+				margin: 0;
+			}
+			.nav-item{
+				.nav-link{
+					font-size: 1.5rem;
+					color: $black;
+					padding: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.caterspot{ 
+	.client{
+		&.bleed{
+			&::before{
+				content: 'Cat-';
+			}
+			&::after{
+				content: 'erspot';
+			}
+		}
+	}
+}
+
+
+#website{
+	&.bleed{
+		&::after{
+			content: '01';
+			margin-right: -80px;
+			margin-bottom: -144px;
+		}
+	}
+}
+#dashboard{
+	&.bleed{
+		&::after{
+			content: '02';
+			margin-right: -80px;
+			margin-bottom: -144px;
+		}
+	}
+}
+#mobile{
+	&.bleed{
+		&::after{
+			content: '03';
+			margin-right: -80px;
+			margin-bottom: -144px;
+		}
+	}
+}
+
+.portfolio-single .testimonials{
+	&.bleed{
+		&::before{
+			content: 'hap-';
+		}
+		&::after{
+			content: 'ppy';
+		}
+	}
+}

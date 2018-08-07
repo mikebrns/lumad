@@ -1,0 +1,175 @@
+---
+title: LUMAD - Digital Agency
+layout: home
+---
+
+
+<section class="hero d-flex flex-column justify-content-end h-100-vh">
+	<div class="container">
+		<div class="row">
+			<div class="col-8">
+				<h1>A full-service agency, busy designing and developing beautiful and functional digital products.</h1>
+			</div>
+		</div>
+	</div>
+</section>		
+
+<section class="work bleed position-relative h-100-vh" id="work" data-sticky-container>
+	<div class="container">
+		<h1 class="d-flex align-items-center m-0 h-50-vh">Work</h1>
+		<div class="row">
+			<div class="col">
+				<div class="list-group" id="list-group-work" data-margin-top="122">
+					{% for portfolio in site.portfolio %}
+						<a href="#{{ portfolio.body-class }}" class="h1 link list-group-item list-group-item-action mb-5" data-hover="{{ portfolio.title }}">			  
+							{{ portfolio.title }}
+						</a>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col">
+				{% for portfolio in site.portfolio %}
+					<div id="{{ portfolio.body-class }}" class="mb-5">
+						<span class="h1">{{ portfolio.description }}</span>
+						<div class="w-100"></div>
+						<h1><a class="link my-5" href="{{ portfolio.url | prepend: site.baseurl }}" data-hover="View&nbsp;Case">View Case</a></h1>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="process bleed position-relative h-100-vh" data-sticky-container>
+	<div class="container">
+		<h1 class="d-flex align-items-center m-0 h-50-vh">Process</h1>
+		<div class="row">
+			<div class="col">
+				<div class="list-group" id="list-group-process" data-margin-top="122">
+					<a href="#branding" class="h1 link list-group-item list-group-item-action mb-5" data-hover="Branding">
+						Branding
+					</a>
+					<a href="#uiux" class="h1 link list-group-item list-group-item-action mb-5" data-hover="UI/UX">
+						UI/UX
+					</a>
+			 		<a href="#dev" class="h1 link list-group-item list-group-item-action mb-5" data-hover="Development">
+			 			Development
+			 		</a>
+				</div>
+			</div>
+			<div class="col">
+				<div id="branding" class="border-bottom">
+					<p class="h1 mb-5">We combine design trends with functional design to produce a visually appealing website.</p>
+					
+					<p class="h1 mb-5">We learn on what design works through hard-earned positive results from our satisfied clients.</p>
+				
+					<p class="h1 mb-5">Though each website has its own personality, we design your website's UI through the eyes of your customers.</p>
+				</div>
+				<div id="uiux" class="border-bottom mt-5">
+					<p class="h1 mb-5">A website without proper user experience is an inefficient one.</p>
+
+					<p class="h1 mb-5">We believe that the best design is invisible to the naked eye, like how an efficient user experience can greatly impact your customers.</p>
+
+					<p class="h1 mb-5">As experts on the field, we make better UX for your website by analysing its overall user flow and producing a much efficient user experience.</p>
+				</div>
+				<div id="dev" class="mt-5">
+					<p class="h1 mb-5">We specialise in front-end web development and WordPress to produce a fully functional website.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="testimonials bleed position-relative h-100-vh">
+	<div class="container">
+		<h1 class="d-flex align-items-center m-0 h-50-vh">Testimonials</h1>
+	</div>
+	<div class="container">
+		<div class="carousel" data-flickity='{ "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": true }'>
+			<div class="carousel-cell">
+				<blockquote class="blockquote position-relative d-flex flex-column justify-content-center">
+					<img class="rounded-circle" src="{{ site.baseurl }}/assets/img/michael-dunlop.jpg">
+					<p class="h1 mb-4">"One of the best at a fraction of the price. If we did not have such a great designer, AwesomeWeb would be nowhere near as good. Design can make or break a business."</p>
+					<footer>
+						<p class="text-muted">Michael Dunlop - <cite title="AwesomeWeb">Awesomeweb.com</cite></p>
+					</footer>
+				</blockquote>
+			</div>
+			<div class="carousel-cell">
+				<blockquote class="blockquote position-relative d-flex flex-column justify-content-center">
+					<img class="rounded-circle" src="{{ site.baseurl }}/assets/img/austin-felton.jpg">
+					<p class="h1 mb-4">"Your search for a killer designer is over, Lumad is one of the rare few designers who can translate a vague or general idea into something truly magical and compelling."</p>
+					<footer>
+						<p class="text-muted">Austin Felton - <cite title="AwesomeWeb">Entrecloud.com</cite></p>
+					</footer>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="services bleed position-relative h-100-vh">
+	<div class="container">
+		<h1 class="d-flex align-items-center m-0 h-50-vh">Services</h1>
+		<div class="row">
+			<div class="col">
+				<ul class="list-group">
+					<li class="h1 list-group-item">
+			    		Branding
+			 		</li>
+			 		<li class="h1 list-group-item">
+			    		User Interface
+			 		</li>
+			 		<li class="h1 list-group-item">
+			    		User Experience
+			 		</li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul class="list-group">
+					<li class="h1 list-group-item">
+			    		Front-end Development
+			 		</li>
+			 		<li class="h1 list-group-item">
+			    		CMS
+			 		</li>
+			 		<li class="h1 list-group-item">
+			    		E-Commerce
+			 		</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="contact bleed position-relative h-100-vh mb-5" id="contact">
+	<div class="container">
+		<h1 class="d-flex align-items-center m-0 h-50-vh">Contact Us</h1>
+		<div class="row">
+			<div class="col-10">
+				<p class="h1">If you have a project in mind or are simply interested in finding out more, get in touch and let’s get things moving.</p>
+				<div class="w-100"></div>
+				<h1><a class="link list-group-item mt-5" href="mailto:hello@lumad.co" data-hover="info@lumad.co">info@lumad.co</a></h1>
+			</div>
+		</div>
+	</div>
+</section>				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

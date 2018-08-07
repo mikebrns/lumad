@@ -1,0 +1,12 @@
+footer{
+	&.site-footer{
+		padding: 40px;
+		position: fixed;
+		bottom: 0;
+
+		a{
+			font-size: 1.5rem;
+			color: $text-muted;
+		}
+	}
+}

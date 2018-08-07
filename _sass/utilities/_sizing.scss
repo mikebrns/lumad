@@ -1,0 +1,19 @@
+.h-100-vh{
+	min-height: 100vh;
+	@include media-breakpoint-down(md) {
+		height: none;
+	}
+}
+.h-50-vh{
+	min-height: 50vh;
+	@include media-breakpoint-down(md) {
+		height: none;
+	}
+}
+.h-25-vh{
+	min-height: 25vh;
+	@include media-breakpoint-down(md) {
+		height: none;
+	}
+}
+
